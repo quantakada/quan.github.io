@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("w3images/1.jfif");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+	  <img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="WELCOME TO FC ONLINE logo">
+    <div class="w3-col s1">
+      <a href="#" class="w3-button w1-block w3-black">Trang Chủ</a>
+    </div>
+    <div class="w3-col s1">
+      <a href="#Giới-Thiệu" class="w3-button w1-block w3-black">Giới Thiệu</a>
+    </div>
+    <div class="w3-col s1">
+      <a href="#Giải Trí" class="w3-button w1-block w3-black">Giải Trí</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Liên-Hệ" class="w3-button w1-block w3-black">Liên Hệ</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Giới Thiệu Sơ Lược Đội Tuyển Và Câu Lạc Bộ Yêu Thích</span></h5>
+    <p>Trùm Fc online Mobile</p>
+    <p>Không ngán ai</p>
+    <p>Tuyển Brazil
+		<img src="w3images/Brazil.jpg" style="width:50%;max-width:50px;margin-top:50px;">
+    <p>Câu Lạc Bộ Dortmund
+		<img src="w3images/bvb.jpg" style="width:50%;max-width:50px;margin-top:50px;">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Giải Trí Trận Đấu Dortmund Vs Real Marid</span></h5>
+	  <iframe width="800" height="515" src="https://www.youtube.com/embed/RYWyMJY3aTA?si=_B0D7KwiZ3lmUf79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+   
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Trung Quân" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="0798176638" required name="People"></p>
+      
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Trùm FC MOBILE" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">IN GAME : JkeyDark</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
